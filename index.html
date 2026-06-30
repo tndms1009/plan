@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20년지기 우정 여행</title>
+    <!-- 귀여운 느낌의 구글 폰트(주아체) 적용 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        /* 기존보다 조금 더 밝은 다크 그레이 톤 배경 */
+        background-color: #2e2e2e;
+        color: #ffffff;
+        font-family: "Jua", sans-serif;
+        margin: 0;
+        padding: 20px;
+        line-height: 1.6;
+      }
+      h1 {
+        color: #ffca28; /* 노란색 포인트 */
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 5px;
+      }
+      .info {
+        text-align: center;
+        color: #dddddd;
+        font-size: 15px;
+        margin-bottom: 30px;
+      }
+      h2 {
+        color: #ffca28;
+        border-bottom: 2px dashed #666666;
+        padding-bottom: 10px;
+        font-size: 22px;
+        margin-top: 35px;
+      }
+      /* 박스 형태의 접기/펴기 디자인 */
+      details {
+        /* 상세 박스 배경도 톤업 */
+        background-color: #3f3f3f;
+        border-radius: 12px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+      }
+      /* 각 일자별 컨셉 (터치 영역) */
+      summary {
+        background-color: rgba(255, 202, 40, 0.15);
+        color: #ffca28;
+        padding: 0 20px;
+        font-size: 18px;
+        cursor: pointer;
+        list-style: none;
+        outline: none;
+        /* 박스 크기를 일정하게 맞추기 위한 속성 추가 */
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        min-height: 60px;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      } /* 기본 화살표 숨김 */
+      summary:active {
+        background-color: rgba(255, 202, 40, 0.25);
+      }
+
+      /* 터치 시 열리는 상세 일정 영역 */
+      .content {
+        padding: 15px 15px 20px 15px;
+        font-size: 16px; /* 모바일에서 보기 편한 크기 */
+        color: #f5f5f5;
+        border-top: 1px solid rgba(255, 202, 40, 0.1); /* 경계선 추가로 깔끔하게 */
+      }
+      ul {
+        padding-left: 5px;
+        margin: 0;
+        list-style-type: none;
+      }
+      li {
+        margin-bottom: 12px;
+        display: flex;
+        align-items: flex-start;
+      }
+      .time {
+        color: #ffca28;
+        margin-right: 10px;
+        font-size: 15px;
+        min-width: 45px;
+      }
+      .desc {
+        flex: 1;
+      }
+      .footer {
+        text-align: center;
+        color: #aaaaaa;
+        font-size: 14px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🚗 20년지기 우정 여행</h1>
+    <div class="info">🗓 27.03.05 - 03.07 | 📍 인천 출발 | 👥 10명</div>
+
+    <h2>📍 1안: 강원도 속초 & 고성</h2>
+
+    <details>
+      <summary>DAY 1 📌 속초 시장 타임어택 & 방구석 예능</summary>
+      <div class="content">
+        <ul>
+          <li>
+            <span class="time">08:00</span>
+            <span class="desc">인천 집결 및 출발 (차량별 무전기 앱 On!)</span>
+          </li>
+          <li>
+            <span class="time">11:00</span>
+            <span class="desc">가평/홍천 휴게소 간식 타임</span>
+          </li>
+          <li>
+            <span class="time">13:00</span>
+            <span class="desc">속초 도착 및 점심 (동치미 막국수)</span>
+          </li>
+          <li>
+            <span class="time">15:00</span>
+            <span class="desc"
+              ><b>[액티비티]</b> 속초 중앙시장 5만원 안주 포장 레이스</span
+            >
+          </li>
+          <li>
+            <span class="time">17:00</span>
+            <span class="desc">고성 오션뷰 독채 펜션 체크인</span>
+          </li>
+          <li>
+            <span class="time">18:30</span>
+            <span class="desc">바비큐 파티 및 우정의 밤</span>
+          </li>
+          <li>
+            <span class="time">21:00</span>
+            <span class="desc"
+              ><b>[액티비티]</b> 방구석 예능 (고요 속의 외침 등)</span
+            >
+          </li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>DAY 2 📌 20년 우정 타임머신 & 펜션 대첩</summary>
+      <div class="content">
+        <ul>
+          <li>
+            <span class="time">10:30</span>
+            <span class="desc">기상 및 아침 식사 (황태해장국)</span>
+          </li>
+          <li>
+            <span class="time">12:00</span>
+            <span class="desc"
+              ><b>[액티비티]</b> 아야진 해변 흑역사 사진 완벽 재현하기</span
+            >
+          </li>
+          <li>
+            <span class="time">14:30</span>
+            <span class="desc">오션뷰 대형 카페 휴식 및 커피 내기</span>
+          </li>
+          <li>
+            <span class="time">16:00</span>
+            <span class="desc"
+              ><b>[액티비티]</b> 마트 랜덤 식재료 제비뽑기 장보기</span
+            >
+          </li>
+          <li>
+            <span class="time">18:30</span>
+            <span class="desc"><b>[액티비티]</b> 흑백 요리사: 펜션 대첩</span>
+          </li>
+          <li>
+            <span class="time">21:00</span>
+            <span class="desc">요리 시식 및 패배팀 설거지 벌칙</span>
+          </li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>DAY 3 📌 여유로운 회복과 귀가</summary>
+      <div class="content">
+        <ul>
+          <li>
+            <span class="time">11:00</span>
+            <span class="desc">체크아웃 (패배팀 아침 분리수거)</span>
+          </li>
+          <li>
+            <span class="time">12:00</span>
+            <span class="desc">현지 맛집 (시원한 물회 또는 대게)</span>
+          </li>
+          <li>
+            <span class="time">14:00</span>
+            <span class="desc">척산온천 족욕 또는 만석닭강정 구매</span>
+          </li>
+          <li>
+            <span class="time">15:30</span>
+            <span class="desc">인천으로 출발</span>
+          </li>
+          <li>
+            <span class="time">19:00</span>
+            <span class="desc">인천 도착 및 해산</span>
+          </li>
+        </ul>
+      </div>
+    </details>
+
+    <h2>📍 2안: 전라남도 여수</h2>
+
+    <details>
+      <summary>DAY 1 📌 밤바다 감성과 광장 타임어택</summary>
+      <div class="content">
+        <ul>
+          <li>
+            <span class="time">08:00</span>
+            <span class="desc">인천 집결 및 출발</span>
+          </li>
+          <li>
+            <span class="time">13:30</span>
+            <span class="desc">여수 도착 및 점심 (게장 백반)</span>
+          </li>
+          <li>
+            <span class="time">15:00</span>
+            <span class="desc"
+              ><b>[액티비티]</b> 이순신광장 디저트 포장 눈치게임</span
+            >
+          </li>
+          <li>
+            <span class="time">17:00</span>
+            <span class="desc">돌산읍 대형 독채 리조트 체크인</span>
+          </li>
+          <li>
+            <span class="time">18:30</span>
+            <span class="desc">여수 수산시장 포장 선어회 & 바비큐</span>
+          </li>
+          <li>
+            <span class="time">20:30</span>
+            <span class="desc"
+              ><b>[액티비티]</b> 여수 밤바다 배경 방구석 예능</span
+            >
+          </li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>DAY 2 📌 해상 랜드마크 & 펜션 대첩</summary>
+      <div class="content">
+        <ul>
+          <li>
+            <span class="time">10:30</span>
+            <span class="desc">기상 및 아침 식사 (장어탕 또는 국밥)</span>
+          </li>
+          <li>
+            <span class="time">12:00</span>
+            <span class="desc">해상케이블카 탑승 & 오동도 산책</span>
+          </li>
+          <li>
+            <span class="time">13:30</span>
+            <span class="desc"
+              ><b>[액티비티]</b> 랜드마크 배경 과거 사진 재현하기</span
+            >
+          </li>
+          <li>
+            <span class="time">15:00</span>
+            <span class="desc">대형 마트 랜덤 식재료 제비뽑기 장보기</span>
+          </li>
+          <li>
+            <span class="time">16:30</span>
+            <span class="desc">펜션 복귀 및 수영/자쿠지 휴식</span>
+          </li>
+          <li>
+            <span class="time">18:30</span>
+            <span class="desc"
+              ><b>[액티비티]</b> 흑백 요리사: 여수 갓김치 활용 대첩</span
+            >
+          </li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>DAY 3 📌 아쉬움을 달래는 귀가길</summary>
+      <div class="content">
+        <ul>
+          <li>
+            <span class="time">11:00</span>
+            <span class="desc">체크아웃 및 단체 사진 촬영</span>
+          </li>
+          <li>
+            <span class="time">12:00</span>
+            <span class="desc">현지 맛집 (새조개 샤브샤브 등)</span>
+          </li>
+          <li>
+            <span class="time">14:00</span>
+            <span class="desc">초대형 오션뷰 카페 휴식</span>
+          </li>
+          <li>
+            <span class="time">15:30</span>
+            <span class="desc">인천으로 출발</span>
+          </li>
+          <li>
+            <span class="time">20:00</span>
+            <span class="desc">인천 도착 및 해산</span>
+          </li>
+        </ul>
+      </div>
+    </details>
+
+    <div class="footer">
+      안전 운전하시고, 평생 기억에 남을 우정 여행이 되기를 바랍니다! 🥂
+    </div>
+  </body>
+</html>
