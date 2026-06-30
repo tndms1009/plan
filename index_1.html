@@ -253,6 +253,107 @@
       font-weight: 500;
     }
 
+    /* 여행지 추천 리스트 */
+    .spot-section-title {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #999;
+      letter-spacing: 0.4px;
+      margin: 28px 0 12px;
+      text-transform: uppercase;
+    }
+
+    .spot-card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid #efefef;
+      padding: 16px;
+      margin-bottom: 12px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+    }
+
+    .spot-card-inner {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .spot-card-img {
+      width: 88px;
+      height: 88px;
+      min-width: 88px;
+      border-radius: 12px;
+      object-fit: cover;
+      background: #f0f0f0;
+    }
+
+    .spot-card-body {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .spot-card-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .spot-card-title {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: #111;
+      text-decoration: none;
+    }
+
+    .spot-card-title:hover {
+      text-decoration: underline;
+      color: #4a90d9;
+    }
+
+    .spot-pick {
+      font-size: 0.7rem;
+      font-weight: 700;
+      background: #fff0f6;
+      color: #d63384;
+      border-radius: 6px;
+      padding: 2px 7px;
+      white-space: nowrap;
+    }
+
+    .spot-card-desc {
+      font-size: 0.845rem;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .spot-notice {
+      font-size: 0.75rem;
+      color: #bbb;
+      text-align: right;
+      margin-top: 6px;
+    }
+
+    .spot-card-inner {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .spot-card-img {
+      width: 80px;
+      height: 80px;
+      min-width: 80px;
+      border-radius: 10px;
+      object-fit: cover;
+      background: #f0f0f0;
+    }
+
+    .spot-card-body {
+      flex: 1;
+      min-width: 0;
+    }
+
     footer {
       text-align: center;
       padding: 28px 16px 40px;
@@ -341,6 +442,60 @@
       <div class="schedule-item"><span class="time">15:30</span><span class="desc">인천으로 출발</span></div>
       <div class="schedule-item"><span class="time">19:00</span><span class="desc">인천 도착 및 해산</span></div>
     </div>
+
+    <!-- 여행지 추천 -->
+    <p class="spot-section-title">📌 여행지 추천</p>
+
+    <div class="spot-card">
+      <div class="spot-card-inner">
+        <img class="spot-card-img" src="img/tab01_1.jpg" alt="속초 중앙시장" />
+        <div class="spot-card-body">
+          <div class="spot-card-header">
+            <a class="spot-card-title" href="https://naver.me/Fy2FHDwl" target="_blank">🏪 속초 중앙시장</a>
+          </div>
+          <p class="spot-card-desc">도락의 재미를 충족시켜 주는 속초의 대표적인 전통시장입니다. 닭강정, 오징어순대, 신선한 활어회, 다채로운 튀김류 등 현지의 특색 있는 먹거리들이 한곳에 모여 있습니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="spot-card">
+      <div class="spot-card-inner">
+        <img class="spot-card-img" src="img/tab01_2.jpg" alt="아야진 해변" />
+        <div class="spot-card-body">
+          <div class="spot-card-header">
+            <a class="spot-card-title" href="https://naver.me/IFgd8AYY" target="_blank">🏖 아야진 해변</a>
+          </div>
+          <p class="spot-card-desc">에메랄드빛의 맑고 투명한 바다와 독특한 형태의 바위들이 어우러져 이국적인 분위기를 자아내는 곳입니다. 아기자기하게 꾸며진 무지개 해안도로 덕분에 SNS 감성 사진 촬영지로도 인기가 높은 핫플레이스입니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="spot-card">
+      <div class="spot-card-inner">
+        <img class="spot-card-img" src="img/tab01_3.jpg" alt="척산온천 족욕" />
+        <div class="spot-card-body">
+          <div class="spot-card-header">
+            <a class="spot-card-title" href="https://naver.me/GL8i73h5" target="_blank">♨️ 척산온천 족욕</a>
+          </div>
+          <p class="spot-card-desc">만약 제대로 된 온천 목욕이나 노천탕까지 즐기며 전날의 숙취를 완벽하게 날려버리고 싶다면, 바로 근처에 있는 전통 있는 온천 시설인 척산온천휴양촌에 방문해 다 함께 사우나를 하고 나오는 것도 남자들만의 끈끈한 여행 코스로 추천합니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="spot-card">
+      <div class="spot-card-inner">
+        <img class="spot-card-img" src="img/tab01_4.jpg" alt="백담사" />
+        <div class="spot-card-body">
+          <div class="spot-card-header">
+            <a class="spot-card-title" href="https://naver.me/xq3da5Xg" target="_blank">🏯 백담사</a>
+            <span class="spot-pick">✨ 수은 추천</span>
+          </div>
+          <p class="spot-card-desc">사찰인 만큼 너무 시끌벅적하게 장난치기는 어려우니, 조용히 경치를 즐기며 "우리 벌써 38살이다" 같은 진지한 사는 이야기나 추억담을 나누는 웰컴 코스로 활용해 보세요.</p>
+        </div>
+      </div>
+    </div>
+    <p class="spot-notice">*모든 설명은 제미나이로 작성되었습니다*</p>
+
   </div>
 
   <!-- 2안 -->
@@ -398,6 +553,60 @@
       <div class="schedule-item"><span class="time">15:30</span><span class="desc">인천으로 출발</span></div>
       <div class="schedule-item"><span class="time">20:00</span><span class="desc">인천 도착 및 해산</span></div>
     </div>
+
+    <!-- 여행지 추천 -->
+    <p class="spot-section-title">📌 여행지 추천</p>
+
+    <div class="spot-card">
+      <div class="spot-card-inner">
+        <img class="spot-card-img" src="img/tab02_1.jpg" alt="이순신광장" />
+        <div class="spot-card-body">
+          <div class="spot-card-header">
+            <a class="spot-card-title" href="https://naver.me/FpxlUjVN" target="_blank">🗿 이순신광장</a>
+          </div>
+          <p class="spot-card-desc">여수 여행의 중심이자 남자들의 식도락 여행을 시작하기에 가장 좋은 베이스캠프입니다. 광장 주변으로 유명한 간식거리와 로컬 맛집들이 밀집해 있어, 가볍게 간식을 사 먹으며 동네를 둘러보거나 밤에 한잔하기 전 '라떼' 시절 이야기를 풀기 좋습니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="spot-card">
+      <div class="spot-card-inner">
+        <img class="spot-card-img" src="img/tab02_2.jpg" alt="오동도" />
+        <div class="spot-card-body">
+          <div class="spot-card-header">
+            <a class="spot-card-title" href="https://naver.me/Fuz5ZuR5" target="_blank">🌿 오동도</a>
+          </div>
+          <p class="spot-card-desc">방파제 길을 따라 걸어가며 시원한 바닷바람을 맞고, 섬 내부의 울창한 숲길을 산책할 수 있는 여수 대표의 자연 명소입니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="spot-card">
+      <div class="spot-card-inner">
+        <img class="spot-card-img" src="img/tab02_3.jpg" alt="여수 해상케이블카" />
+        <div class="spot-card-body">
+          <div class="spot-card-header">
+            <a class="spot-card-title" href="https://naver.me/xOxH6wtT" target="_blank">🚡 여수 해상케이블카</a>
+          </div>
+          <p class="spot-card-desc">바다 위를 가로지르며 여수 시내와 돌산대교의 풍경을 한눈에 담을 수 있는 하이라이트 코스입니다. 특히 늦은 오후나 해질녘에 탑승하면 여수의 스카이라인이 붉게 물드는 장관을 친구들과 함께 감상할 수 있습니다.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="spot-card">
+      <div class="spot-card-inner">
+        <img class="spot-card-img" src="img/tab02_4.jpg" alt="향일암" />
+        <div class="spot-card-body">
+          <div class="spot-card-header">
+            <a class="spot-card-title" href="https://naver.me/FBe2dBTL" target="_blank">🛕 향일암</a>
+            <span class="spot-pick">✨ 수은 추천</span>
+          </div>
+          <p class="spot-card-desc">바다를 향해 있는 암자라는 이름에 걸맞게, 깎아지른 듯한 해안 절벽 위에 자리 잡고 있습니다. 절에 올라서면 끝없는 수평선이 펼쳐지는데, 그 호쾌한 풍경이 남자들의 가슴을 탁 트이게 만듭니다.</p>
+        </div>
+      </div>
+    </div>
+    <p class="spot-notice">*모든 설명은 제미나이로 작성되었습니다*</p>
+
   </div>
 
 </div>
